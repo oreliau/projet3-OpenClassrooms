@@ -265,3 +265,9 @@ footer hr {
     }
   }
   
+
+  /* loader */
+  .texte-center {
+    display: grid;
+    place-items: center;
+  }

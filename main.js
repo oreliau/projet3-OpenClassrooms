@@ -1,3 +1,17 @@
+document.onreadystatechange = function() { 
+    if (document.readyState !== "complete") { 
+        document.querySelector( 
+          "body").style.visibility = "visible"; 
+        document.querySelector( 
+          "#loader").style.visibility = "hidden"; 
+    } else { 
+        document.querySelector( 
+          "#loader").style.display = "visible"; 
+        document.querySelector( 
+          "body").style.visibility = "none"; 
+    } 
+}; 
+
 let background = document.getElementById('bg');
 let moon = document.getElementById('moon');
 let mountain = document.getElementById('mountain');
