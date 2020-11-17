@@ -50,7 +50,7 @@
 }
 
 .contact-right {
-    background: url("/asset/cinema.jpg");
+    background: url("asset/cinema.jpg");
     background-size: cover;
     background-position: center;
 }
