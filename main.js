@@ -1,16 +1,16 @@
 document.onreadystatechange = function() { 
     if (document.readyState !== "complete") { 
         document.querySelector( 
-          "body").style.visibility = "visible"; 
+          "body").style.visibility = "hidden"; 
         document.querySelector( 
-          "#loader").style.visibility = "hidden"; 
+          "#loader").style.visibility = "visible"; 
     } else { 
         document.querySelector( 
-          "#loader").style.display = "visible"; 
+          "#loader").style.display = "none"; 
         document.querySelector( 
-          "body").style.visibility = "none"; 
+          "body").style.visibility = "visible"; 
     } 
-}; 
+};
 
 let background = document.getElementById('bg');
 let moon = document.getElementById('moon');
