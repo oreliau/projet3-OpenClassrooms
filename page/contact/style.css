@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+/*Initialisator*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav bar */
+
+#navbar {
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    background-color: transparent;
+}
+
+.btn-action {
+    color: white;
+}
+
+.btn-action:hover {
+    color: black;
+}
+
+/* content main */
+
+.main-content {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+}
+
+@media screen and (min-width: 500px){
+    .main-content {
+        grid-template-columns: auto auto;
+    }
+}
+
+.contact-right, .contact-left {
+    padding: 50px;
+    display: grid;
+    grid-template-rows: repeat(auto);
+    grid-gap: 10px;
+}
+
+.contact-left {
+    place-items: center;
+}
+
+.contact-right {
+    background: url("/asset/cinema.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-right h2 {
+    margin: 50px 0px;
+}
+
+.form-group {
+    margin: 20px 0px;
+    color: white;
+}

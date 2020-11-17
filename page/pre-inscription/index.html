@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pre-inscription</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Nav bar bootstap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <a class="navbar-brand text-black-50" href="/index.html">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link text-black-50" href="/page/actualite/index.html">Actualité</a>
+            <a class="nav-link text-black-50" href="/page/planning/index.html">Planinng des films</a>
+            <a class="nav-link text-black-50" href="/page/contact/index.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Nav bar bootstap -->
+    <!-- Start Form -->
+    <div class="row form">
+        <div class="col-md-8 order-md-1" style="margin: auto;">
+          <h4 class="mb-3">Vos informations</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Prénom</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Nom</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+            </div>
+    
+            <div class="mb-3">
+              <label for="email">Email </label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+    
+            <div class="mb-3">
+              <label for="address">Addresse <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">Pays <span class="text-muted">(Optional)</span></label>
+                <select class="custom-select d-block w-100" id="country" required>
+                  <option value="">Choose...</option>
+                  <option>France</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">Département <span class="text-muted">(Optional)</span></label>
+                <select class="custom-select d-block w-100" id="state" required>
+                  <option value="">Choose...</option>
+                  <option>Paris</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip">Code Postale <span class="text-muted">(Optional)</span></label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address">
+              <label class="custom-control-label" for="same-address">
+                Vous nous autorisez à utiliser vos informations personnels à des fins d'analyses
+              </label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="save-info">
+              <label class="custom-control-label" for="save-info">Enregistrer mes informations pour la prochaines fois</label>
+            </div>
+            <hr class="mb-4">
+    
+            <h4 class="mb-3">Réservation</h4>
+    
+            <div class="d-block my-3">
+              <div class="custom-control custom-checkbox">
+                <input id="INTOTHEWILD" name="paymentMethod" type="checkbox" class="custom-control-input">
+                <label class="custom-control-label" for="INTOTHEWILD">5 Août 19h "Into the wild"</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="DEADMAN" name="paymentMethod" type="checkbox" class="custom-control-input">
+                <label class="custom-control-label" for="DEADMAN">6 Août 19h "Dead Man"</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input id="DRIVE" name="paymentMethod" type="checkbox" class="custom-control-input">
+                <label class="custom-control-label" for="DRIVE">7 Août 19h "Drive"</label>
+              </div>              
+              <div class="custom-control custom-checkbox">
+                <input id="LAHAINE" name="paymentMethod" type="checkbox" class="custom-control-input" disabled>
+                <label class="custom-control-label" for="LAHAINE">8 Août 18h "La haine" (complet)</label>
+              </div>
+            </div>
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Précommander</button>
+          </form>
+        </div>
+    
+
+    </div>
+    <!-- End Form -->
+    <!-- Start Footer -->
+    <footer class="my-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020-2021 Oréliau KOUMEDZRO</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Mention Légal</a></li>
+            <li class="list-inline-item"><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

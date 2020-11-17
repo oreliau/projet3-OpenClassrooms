@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+/* navbar */
+
+.navbar {
+    z-index: 2;
+    color: #0a2a43;
+    width: 100%;
+    position: fixed;
+}
+
+.btn-action {
+  color: white;
+}
+
+.btn-action:hover {
+  color: black;
+}
+
+/*init */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Poppins", sans-serif;
+  color: #777;
+
+}
+
+/* form */
+
+.form {
+  width: 100%;
+  padding-top: 100px;
+  background-color: white;
+}
